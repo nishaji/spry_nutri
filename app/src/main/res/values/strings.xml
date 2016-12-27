@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="plan">Daily Goal</string>
+    <string name="NoActionBar">My Goals</string>
+
+    <string name="L25">25%</string>
+    <string name="L50">50%></string>
+    <string name="checki">Check Your Internet Connection</string>
+    <string name="servererror">Session Time Out</string>
+    <string name="Load">Load more</string>
+    <string name="as">as</string>
+    <string name="Company_name">Spry</string>
+    <string name="nutrition">nutrition</string>
+    <string name="action_setMeal">Diet Plan</string>
+    <string name="skip">You skipped the tutorial</string>
+    <string name="Add"> Add</string>
+    <string name="main_search"> Search</string>
+    <string name="preferances">Meal Plans</string>
+    <string name="message">Are You Sure You Want To Delete</string>
+    <string name="positive_button">Yes</string>
+    <string name="negative_button">No</string>
+    <string name="app_name">Spry Nutrition</string>
+    <string name="addgoal">"Create Goal"</string>
+    <string name="defaults">"Default Goal"</string>
+    <string name="action_settings">Daily Goal</string>
+    <string name="Home">Home</string>
+    <string name="home_logo">http://sprytechies.com</string>
+    <string name="home_logo_desc">The   Global    Nutrition   Database</string>
+    <string name="power">Powered by</string>
+    <string name="btnadd">Add</string>
+    <string name="btndiscard">Discard</string>
+    <string name="edtsearch">Search for Food</string>
+    <string name="go">Go</string>
+    <string name="title_activity_go">          Search</string>
+    <string name="search">Home</string>
+    <string name="title_activity_finalsearchresult">Finalsearchresult</string>
+    <string name="title">Nutrition Facts</string>
+    <string name="title_activity_chart">ChartActivity</string>
+    <string name="title_activity_in">In</string>
+    <string name="title_activity_convert_view">ConvertView</string>
+    <string name="Nutrition">Nutritionix</string>
+    <string name="Zero">0%</string>
+    <string name="from"><b>From</b></string>
+    <string name="servingsize">Serving Size</string>
+    <string name="amt">Amount Per Serving</string>
+    <string name="Calories">Calories</string>
+    <string name="Total">Total Fat</string>
+    <string name="fat">Fat</string>
+    <string name="Saturated">Saturated Fat</string>
+    <string name="Cholestrol">Cholestrol</string>
+    <string name="Carbs">Carbs</string>
+    <string name="Sodium">Sodium</string>
+    <string name="Protein">Protein</string>
+    <string name="vita">Vitamin A</string>
+    <string name="vitc">Vitamin C</string>
+    <string name="vitA">Vit A</string>
+    <string name="vitC">Vit C</string>
+    <string name="Iron">Iron</string>
+    <string name="Calcium">Calcium</string>
+    <string name="desclaimer">Daily Values are based on a 2000 calorie diet. Your Daily Values may be higher or lower depending on your calorie needs.
+		\n Calculators are appropriate for healthy, non-pregnant adults 19 and older. </string>
+    <string name="descnote">	    *Percent Daily Values are based on a 2000 calorie diet. Your Daily Values may be higher or lower depending on your calorie needs. 
+		\t Calculators are appropriate for healthy, non-pregnant adults 19 and older.                        </string>
+    <string name="title_activity_save__show">Save_Show</string>
+    <string name="title_activity_setgoal">My Goal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_set_goal">My Goal</string>
+    <string name="title_section1">SetAge</string>
+    <string name="title_section2">SetWeight </string>
+    <string name="title_section3">SetActivity</string>
+    <string name="title_section4">SetHeight</string>
+    <string name="setgoal">Set Goal</string>
+    <string name="defaultgoal">Default Goal</string>
+    <string name="dailygoal">Daily Goal</string>
+    <string name="title_activity_set_preferences">My Goals</string>
+    <string name="btnOk">OK</string>
+    <string name="btncancel">Cancel</string>
+    <string name="title_activity_thanku">Goal Set</string>
+    <string name="RNF">Result Not Found</string>
+    <string name="imageload">Image Load</string>
+    <string name="item">Item</string>
+    <string name="serving_size">Serving Size</string>
+    <string name="proteing">Protein (g)</string>
+    <string name="fatg">Fat (g)</string>
+    <string name="caloriesk">Calories (K)</string>
+    <string name="carbsg">Carbs (g)</string>
+    <string name="sodiummg">Sodium (mg)</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="breakfast">BreakFast</string>
+    <string name="my_details">My Details</string>
+    <string name="HOAU">How old are You ?</string>
+    <string name="WIYA"> your Weight?</string>
+    <string name="HTAY">How Tall are you ?</string>
+    <string name="cm">cm</string>
+    <string name="age">Age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="iam">I am</string>
+    <string name="HAAU">How Active are you?</string>
+    <string name="WSETDP">Set Goal</string>
+    <string name="dgoal">Daily Goal</string>
+    <string name="g">  g</string>
+    <string name="k">  k</string>
+    <string name="mg"> mg</string>
+    <string name="set">Set</string>
+    <string name="total_item">Total Item</string>
+    <string name="L100">100%</string>
+    <string name="delete">Delete</string>
+    <string name="undo">UNDO</string>
+    <string name="ADT">A Day Total</string>
+    <string name="LS50">50%</string>
+    <string name="V50">50</string>
+    <string name="V2400">2400</string>
+    <string name="V300">300</string>
+    <string name="V2000">2000</string>
+    <string name="V65">65</string>
+    <string name="V24">24</string>
+    <string name="added">Added</string>
+    <string name="nisha">Nisha</string>
+    <string name="V60">60</string>
+    <string name="cate">My Meals</string>
+    <string name="addnew">Add New</string>
+    <string name="home">Home</string>
+    <string name="hintsupper">Supper</string>
+    <string name="mealplan">Meal Plan</string>
+    <string name="noresult"></string>
+    <string name="title_activity_my__daily__plans">Categories Setting</string>
+    <string name="dailynutrition">Daily Nutrition</string>
+    <string name="title_activity_daily__goal">Daily Goals</string>
+    <string-array name="jazz_artist_names">
+        <item>Brad Mehldau</item>
+        <item>Joshua Redman</item>
+        <item>Chick Corea</item>
+        <item>Kurt Rosenwinkel</item>
+        <item>Miles Davis</item>
+        <item>Wayne Shorter</item>
+        <item>Michael Brecker</item>
+        <item>Herbie Hancock</item>
+        <item>Joe Zawinul</item>
+        <item>Brian Blade</item>
+        <item>Jeff Ballard</item>
+        <item>Larry Grenadier</item>
+        <item>Keith Jarrett</item>
+        <item>McCoy Tyner</item>
+        <item>Stephon Harris</item>
+        <item>Mark Turner</item>
+    </string-array>
+    <string name="circles_title">Visible circles:</string>
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="revoke_access_button_name">Revoke</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="status_sign_in_required">Sign-in required</string>
+    <string name="status_sign_in_error">Error signing in: %s</string>
+    <string name="status_loading">Loading…</string>
+    <string name="status_signing_in">Signing in with Google+…</string>
+    <string name="status_signed_out">Signed out</string>
+    <string name="status_revoke_access">Revoked access</string>
+    <string name="status_revoke_access_error">Error revoking access: %s</string>
+    <string name="signed_in_as">Signed in as %s</string>
+
+    <!-- Used if there was an error loading the signed in user's name. -->
+    <string name="unknown_person">Unknown</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="profile_picture">User\'s profile picture.</string>
+    <string name="mock_server_has_token">Mock server has refresh token?</string>
+    <string name="request_server_auth_code">Request server auth code?</string>
+    <string name="configuration_error">Error: the value of WEB_CLIENT_ID or SERVER_BASE_URL is not  set correctly. This will cause errors when requesting a server auth code.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_example">Example action</string>
+    <string name="starred_string">Starred</string>
+    <string name="inbox_string">Inbox</string>
+    <string name="sent_mail_string">Sent mail</string>
+    <string name="draft_string">Drafts</string>
+    <string name="subheader">Subheader</string>
+    <string name="trash_string">Trash</string>
+    <string name="all_mail_string">All mails</string>
+    <string name="spam_string">Spams</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_nav">Nav</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="cd_navdrawer_user_picture">User Profile Image</string>
+    <string name="nav_sub_header">Sub header</string>
+    <string name="nav_sub_item_1">Sub item 1</string>
+    <string name="nav_sub_item_2">Sub item 2</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_first_launching_tutorial">FirstLaunchingTutorial</string>
+    <string name="title_menu_github">View on GitHub</string>
+
+    <string name="label_options">Options:</string>
+    <string name="label_option_fullscreen">Enable fullscreen</string>
+    <string name="label_option_scrollable">Scrollable slides</string>
+    <string name="label_option_custom_fragments">Enable custom fragments</string>
+    <string name="label_option_permissions">Enable permission request</string>
+    <string name="label_option_skip_enabled">Enable skip button</string>
+    <string name="label_option_finish_enabled">Enable finish button</string>
+    <string name="label_option_open_new_activity">Open new activity after intro</string>
+    <string name="label_start_intro">Start intro</string>
+
+    <string name="title_material_metaphor">Material is the metaphor</string>
+    <string name="title_material_bold">Bold, graphic, intentional</string>
+    <string name="title_material_motion">Motion provides meaning</string>
+    <string name="title_material_shadow">Light and shadow</string>
+
+    <string name="description_material_metaphor">A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.</string>
+    <string name="description_material_bold">The foundational elements of print-based design – typography, grids, space, scale, color, and use of imagery – guide visual treatments.</string>
+    <string name="description_material_motion">Motion respects and reinforces the user as the prime mover. Primary user actions are inflection points that initiate motion, transforming the whole design.</string>
+    <string name="description_material_shadow">Within the material environment, virtual lights illuminate the scene. Key lights create directional shadows, while ambient light creates soft shadows from all angles.</string>
+
+    <string name="title_permissions">Requesting permissions was never easier.</string>
+    <string name="description_permissions">This app needs the camera and storage permission.\nIt\'s only to show how permission requests work in this library and we won\'t do anything with the granted permissions.</string>
+    <string name="label_grant_permissions">Please grant the permissions before proceeding.</string>
+
+    <string name="title_fragment_login">This is a custom fragment.</string>
+    <string name="hint_fake_username">Fake username</string>
+    <string name="hint_fake_password">Fake password</string>
+    <string name="label_fake_login">Fake login</string>
+    <string name="label_fake_login_loading">Loading…</string>
+    <string name="label_fake_login_success">Logged in ☺</string>
+    <string name="label_fake_login_success_message">Successfully faked login.</string>
+    <string name="label_fill_out_form">Please fill out the form before proceeding.</string>
+
+    <string name="title_fragment_custom">Take off!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

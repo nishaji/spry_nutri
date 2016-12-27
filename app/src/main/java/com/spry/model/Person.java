@@ -1,0 +1,69 @@
+package com.spry.model;
+
+public class Person {
+    private  String Name;
+    private  String Profile_Url;
+    private  String gender;
+    private  String age;
+    private String email;
+    private  String DOB;
+    private  String AndroidID;
+    private  String DeviceID;
+    private  String SERIALID;
+
+    public String getName() {
+        return Name;
+    }
+    public void setName(String name) {
+        Name = name;
+    }
+    public String getProfile_Url() {
+        return Profile_Url;
+    }
+    public void setProfile_Url(String profile_Url) {
+        Profile_Url = profile_Url;
+    }
+    public String getGender() {
+        return gender;
+    }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+    public String getAge() {
+        return age;
+    }
+    public void setAge(String age) {
+        this.age = age;
+    }
+    public String getDOB() {
+        return DOB;
+    }
+    public void setDOB(String dOB) {
+        DOB = dOB;
+    }
+    public String getAndroidID() {
+        return AndroidID;
+    }
+    public void setAndroidID(String androidID) {
+        AndroidID = androidID;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getDeviceID() {
+        return DeviceID;
+    }
+    public void setDeviceID(String deviceID) {
+        DeviceID = deviceID;
+    }
+    public String getSERIALID() {
+        return SERIALID;
+    }
+    public void setSERIALID(String sERIALID) {
+        SERIALID = sERIALID;
+    }
+
+}

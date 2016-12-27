@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/main_screen_back">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#594691"
+        android:id="@+id/chart_toolbar"
+        android:layout_alignParentTop="true"
+        />
+<ScrollView
+    android:id="@+id/scrollviewGo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical"
+    android:layout_marginTop="90dp">
+
+    <RelativeLayout
+        android:id="@+id/LSub1"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="1px"
+       	android:paddingBottom="1px"
+        android:background="@drawable/show_detail" >
+
+        <LinearLayout
+            android:id="@+id/Ltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#fafafa"
+            android:layout_margin="1dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/tvtitlenameshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:background="#fafafa"
+                android:textSize="@dimen/L44px"
+                
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+ 
+ 
+  
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+    	android:background="#fafafa"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvamtperservingShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/amt"
+            
+            android:textColor="#898e96"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+  </LinearLayout>
+  
+    
+    <RelativeLayout
+     
+     android:id="@+id/relcalories"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     
+     
+     android:layout_marginLeft="2dp"
+      
+     android:paddingTop="7dp"
+     
+      android:paddingBottom="7dp"
+     android:layout_marginRight="2dp"
+      android:layout_below="@+id/linearLayout4" >
+
+        <TextView
+            android:id="@+id/tvcaloriesShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px"
+            android:paddingLeft="4dp"
+            android:text="@string/Calories" />
+
+        <TextView
+            android:id="@+id/tvcaloriesValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvcaloriesShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_1rel"
+            android:layout_toRightOf="@+id/tvcaloriesShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_1rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvcaloriesShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvCaloriePerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvCaloriesPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relTotalfat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginLeft="2dp"
+     android:layout_marginRight="2dp"
+     android:background="#fafafa"
+       android:paddingTop="7dp"
+     
+      android:paddingBottom="7dp"
+    
+        android:layout_below="@+id/relcalories" >
+
+        <TextView
+            android:id="@+id/tvfatShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:textColor="#898e96"
+            android:text="@string/Total" />
+
+        <TextView
+            android:id="@+id/tvFatValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvfatShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_2rel"
+            android:layout_toRightOf="@+id/tvfatShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_2rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvfatShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvFatPerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvFatPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+        
+    </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/relTotalSatfat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/relCholestrol"
+      android:layout_below="@+id/relTotalfat"
+      android:layout_marginRight="2dp"
+    
+       android:paddingTop="7dp"
+     
+      android:paddingBottom="7dp"
+       >
+
+        <TextView
+            android:id="@+id/tvSatfatShow"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px"
+
+
+            android:text="@string/Saturated" />
+
+        <TextView
+            android:id="@+id/tvSatFatValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvSatfatShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_7rel"
+            android:layout_toRightOf="@+id/tvSatfatShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_7rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvSatfatShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvSatFatPerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvSatFatPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relCholestrol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relSodium"
+        android:layout_below="@+id/relTotalSatfat"
+        android:layout_marginRight="2dp"
+       android:paddingTop="7dp"
+       android:paddingBottom="7dp"
+     android:background="#fafafa"
+      
+    >
+
+        <TextView
+            android:id="@+id/tvCholestrolShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px"
+            android:text="@string/Cholestrol" />
+
+        <TextView
+            android:id="@+id/tvCholestrolValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvCholestrolShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_3rel"
+            android:layout_toRightOf="@+id/tvCholestrolShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_3rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvCholestrolShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvCholestrolPerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvCholestrolPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/relSodium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="1dp"
+       android:paddingTop="7dp"
+     
+      android:paddingBottom="7dp"
+    
+        android:layout_below="@+id/relCholestrol" >
+
+        <TextView
+            android:id="@+id/tvSodiumShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px"
+            android:paddingLeft="4dp"
+            android:text="@string/Sodium" />
+
+        <TextView
+            android:id="@+id/tvSodiumValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvSodiumShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_4rel"
+            android:layout_toRightOf="@+id/tvSodiumShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_4rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvSodiumShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvSodiumPerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvSodiumPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+        
+    </RelativeLayout>
+        
+        <RelativeLayout
+        android:id="@+id/relCarbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp"
+        android:paddingTop="7dp"
+     android:background="#fafafa"
+      android:paddingBottom="7dp"
+        android:layout_below="@+id/relSodium" >
+
+        <TextView
+            android:id="@+id/tvCarbsShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:textColor="#898e96"
+
+            android:text="@string/Carbs" />
+
+        <TextView
+            android:id="@+id/tvCarbsValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvCarbsShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_5rel"
+            android:layout_toRightOf="@+id/tvCarbsShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_5rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvCarbsShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvCarbsPerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvCarbsPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+    </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/relProtein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     
+     
+           android:layout_marginLeft="2dp"
+           android:layout_marginRight="1dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_below="@+id/relCarbs" >
+
+        <TextView
+            android:id="@+id/tvProteinShow"
+            android:layout_width="100dp"
+            android:textColor="#898e96"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:text="@string/Protein" />
+
+        <TextView
+            android:id="@+id/tvProteinValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvProteinShow"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/_6rel"
+            android:layout_toRightOf="@+id/tvProteinShow"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+<RelativeLayout
+    android:id="@+id/_6rel"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvProteinShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+
+    <TextView
+           android:id="@+id/tvProteinPerGraphValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+          android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvProteinPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+    
+    
+</RelativeLayout>
+        
+    </RelativeLayout>
+    
+        
+    <RelativeLayout
+        android:id="@+id/relVitaminA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp"  
+       android:paddingTop="7dp"
+     android:background="#fafafa"
+      android:paddingBottom="7dp"
+        android:layout_below="@+id/relProtein" >
+
+        <TextView
+            android:id="@+id/tvVitAShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#898e96"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:text="@string/vita" />
+
+<RelativeLayout
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvVitAShow"
+    android:layout_alignParentRight="true"
+   
+    android:background="#fcfcfc" >
+       
+       <TextView
+           android:id="@+id/tvVitminAPerValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#FFC279"
+           android:text=""
+           android:textColor="#898e96" />
+        
+        <TextView
+            android:id="@+id/tvVitminAValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            
+            android:text="@string/Zero"
+            android:textColor="#898e96"
+            android:textSize="@dimen/L30px" />
+
+        </RelativeLayout>
+    
+    </RelativeLayout>
+    
+            <RelativeLayout
+                android:id="@+id/relVitaminB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relVitaminA"
+        		android:layout_marginLeft="2dp"
+        		android:layout_marginRight="1dp"
+                android:paddingTop="7dp"
+     			android:paddingBottom="7dp"
+                
+      			
+    >
+<RelativeLayout
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvVitBShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+                <TextView
+                    android:id="@+id/tvVitminBPerValue"
+                       android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+                   android:background="#FFC279"
+                    android:textColor="#898e96"
+                     />
+
+                <TextView
+                    android:id="@+id/tvVitminBValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    
+                    android:text="@string/Zero"
+                    android:textColor="#898e96"
+                    android:textSize="@dimen/L30px" />
+</RelativeLayout>
+<TextView
+            android:id="@+id/tvVitBShow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#898e96"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:text="@string/vitc" />
+            </RelativeLayout>
+            
+    <RelativeLayout
+        android:id="@+id/relIron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp"
+       android:paddingTop="7dp"
+     android:background="#fafafa"
+      android:paddingBottom="7dp"
+        android:layout_below="@+id/relVitaminB" >
+		
+		<RelativeLayout
+    	android:layout_width="125dp"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@+id/tvIronShow"
+    	android:layout_alignParentRight="true"
+    	android:background="#fcfcfc" >
+        
+        
+
+        <TextView
+            android:id="@+id/tvIronPerValueShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+              android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="#FFC279"
+            
+             />
+
+		<TextView
+		    android:id="@+id/tvIronValueShow"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    
+		    android:paddingRight="10dp"
+		    
+		    android:text="@string/Zero"
+		    android:textColor="#898e96"
+		    android:textSize="@dimen/L30px" />
+
+		</RelativeLayout>
+        
+        
+        <TextView
+            android:id="@+id/tvIronShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:textColor="#898e96"
+            android:text="@string/Iron" />
+
+        
+    </RelativeLayout>
+         <RelativeLayout
+        android:id="@+id/relCalcium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp"
+        
+        android:paddingTop="7dp"
+       android:paddingBottom="7dp"        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/relIron" >
+
+        <TextView
+            android:id="@+id/tvCalciumShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#898e96"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:textSize="@dimen/L30px"
+            android:text="@string/Calcium" />
+
+    <RelativeLayout
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvCalciumShow"
+    android:layout_alignParentRight="true"
+    android:background="#fcfcfc" >
+        
+
+        <TextView
+            android:id="@+id/tvCalciumPerValue"
+        
+                  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+              android:layout_alignParentTop="true"
+             android:background="#FFC279"
+               
+            
+            /><TextView
+                        android:id="@+id/tvCalciumValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        
+                        android:text="@string/Zero"
+                        android:textColor="#898e96"
+                        android:textSize="@dimen/L30px" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+ 
+    <View
+        android:id="@+id/viewShow"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+       
+        android:layout_alignBottom="@+id/Ltitle"
+        android:layout_alignParentRight="true"
+        android:background="#e3e4e6" />
+
+<TextView
+    android:id="@+id/tvNoteShow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/relCalcium"
+    android:layout_below="@id/relCalcium"
+    android:layout_marginTop="5dp"
+    android:alpha="0.7"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:text="@string/descnote"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#898e96"
+    android:textSize="@dimen/textsize_10" />
+
+<RelativeLayout
+    android:id="@+id/header"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+      android:layout_below="@+id/viewShow" >
+
+<RelativeLayout
+    android:id="@+id/linearSub"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_centerVertical="true"
+
+
+     >
+
+
+
+        <TextView
+            android:id="@+id/tvfromshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/from"
+            android:layout_below="@+id/tvitemnameshow"
+            android:textSize="@dimen/textsize_11"
+            android:paddingLeft="@dimen/dp4"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#898e96" />
+
+       <TextView
+            android:id="@+id/tvitemnameshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:ems="9"
+            android:maxLines="2"
+        	android:text="ghk"
+        	android:maxLength="27"
+            android:paddingLeft="@dimen/dp4"
+
+            android:gravity="left"
+            android:textSize="@dimen/textsize_13"
+
+            android:textColor="#898e96" />
+
+        <TextView
+            android:id="@+id/tvbrandnamedetailshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/tvfromshow"
+            android:layout_toRightOf="@+id/tvfromshow"
+            android:gravity="center_horizontal"
+
+            android:ems="7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#898e96"
+            android:textSize="@dimen/textsize_12" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/linearSub2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingRight="10dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/reldatamanip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/edtvalue"
+        android:padding="1dp" >
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/plus"
+			android:contentDescription="@string/imageload"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/plus_minus"
+            android:onClick="clickMinus" />
+
+        <TextView
+            android:id="@+id/edtsearvingsizeqtyshow"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/minus"
+            android:layout_toRightOf="@+id/minus"
+            android:alpha="0.7"
+            android:background="@drawable/editvalue3screen"
+            android:gravity="center"
+            android:inputType="number"
+            android:paddingBottom="14dp"
+            android:textSize="@dimen/textsize_10" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/imageload"
+            android:layout_toRightOf="@+id/edtsearvingsizeqtyshow"
+            android:background="@drawable/plusbackborder"
+            android:onClick="clickPlus" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/calculateServing"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/calculate_btn"
+        android:paddingLeft="3dp"
+        android:textColor="#898e96"
+        android:visibility="gone" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/linearSub2"
+    android:layout_toRightOf="@+id/linearSub" >
+
+    <TextView
+        android:id="@+id/tvSearvingdetailsShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:paddingLeft="@dimen/dp4"
+        android:text="@string/servingsize"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#898e96"
+        android:textSize="@dimen/textsize_10" />
+
+<TextView
+    android:id="@+id/tvitemdetailsShow"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tvSearvingdetailsShow"
+    android:ems="8"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:gravity="center"
+    android:maxLines="3"
+
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#898e96"
+    android:textSize="@dimen/L30px" />
+
+</RelativeLayout>
+
+</RelativeLayout>
+    </RelativeLayout>
+   
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    tools:context="com.Spry.nutritionix.Go" >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tool_bar"
+        />
+    <view
+        class="com.Spry.Swipe.BackgroundContainer"
+        android:id="@+id/listViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ListviewDescription"
+        android:layout_marginTop="1dp">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/White"
+                android:descendantFocusability="blocksDescendants"
+                android:smoothScrollbar="true" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </view>
+    <RelativeLayout
+        android:id="@+id/ListviewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_lay_search" >
+
+        <RelativeLayout
+            android:id="@+id/linearcategoriesbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/White"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="16dp" >
+
+            <TextView
+                android:id="@+id/provi"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:background="@color/CALORIES"
+                android:layout_marginLeft="@dimen/textsize_10"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvprotiendesclabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/provi"
+                android:layout_alignTop="@+id/provi"
+                android:layout_toRightOf="@+id/provi"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/caloriesk"
+                android:textColor="@color/STATUSBARCOLOR"
+                android:textSize="@dimen/textsize_go" />
+
+            <TextView
+                android:id="@+id/tvfiberdesclabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv20"
+                android:layout_alignTop="@+id/tv20"
+                android:layout_toRightOf="@+id/tv20"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:text="@string/proteing"
+                android:textColor="@color/STATUSBARCOLOR"
+                android:textSize="@dimen/textsize_go" />
+
+            <TextView
+                android:id="@+id/tvcaloriesdesclabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignTop="@+id/textView7"
+                android:layout_toRightOf="@+id/textView7"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:text="@string/fatg"
+                android:textColor="@color/STATUSBARCOLOR"
+                android:textSize="@dimen/textsize_go" />
+
+            <TextView
+                android:id="@+id/tv20"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tvprotiendesclabel"
+                android:background="@color/CARBS" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_toRightOf="@+id/tvsodiumdesclabel"
+                android:background="@color/PROTIEN"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/STATUSBARCOLOR" />
+
+            <TextView
+                android:id="@+id/vitcreqval"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tvfiberdesclabel"
+                android:background="@color/SODIUM" />
+
+            <TextView
+                android:id="@+id/tvsodiumdesclabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/vitcreqval"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:text="@string/carbsg"
+                android:textColor="@color/STATUSBARCOLOR"
+                android:textSize="@dimen/textsize_go" />
+
+            <TextView
+                android:id="@+id/tvcarbsdesclabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvcaloriesdesclabel"
+                android:layout_alignTop="@+id/textView9"
+                android:layout_toRightOf="@+id/textView9"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:text="@string/sodiummg"
+                android:textColor="@color/STATUSBARCOLOR"
+                android:textSize="@dimen/textsize_go" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_alignBottom="@+id/tvcaloriesdesclabel"
+                android:layout_toRightOf="@+id/tvcaloriesdesclabel"
+                android:layout_marginLeft="3dp"
+                android:background="@color/FAT" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_lay_search"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/mainlayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/btngosecond"
+            android:background="@drawable/edtsearchback" >
+
+            <EditText
+                android:id="@+id/edtserach2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/imagecutlaunch"
+                android:background="@drawable/editborder"
+                android:ems="10"
+                android:hint="@string/edtsearch"
+                android:imeOptions="actionGo"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/imagecutlaunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imageload"
+                android:layout_alignBottom="@+id/edtserach2"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/imagecut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/edtserach2"
+                android:layout_centerVertical="true"
+                android:onClick="clearText"
+                android:contentDescription="@string/imageload"
+                android:src="@drawable/cross"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btngosecond"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/mainlayout1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mainlayout1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btnround"
+            android:text="@string/go"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+
+        >
+
+        <Button
+            android:id="@+id/LoadMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f8f8f8"
+            android:gravity="bottom"
+            android:onClick="addMore"
+            android:text="@string/Load"
+            android:textColor="#9bc535" />
+
+        <ImageView
+            android:id="@+id/imgloadmore"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@string/imageload"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/LoadMore"
+            android:src="@drawable/load_more" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvstatusfalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/RNF"
+        android:textColor="@color/LIGHTRED"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+</RelativeLayout>

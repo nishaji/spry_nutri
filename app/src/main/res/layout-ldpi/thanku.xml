@@ -1,0 +1,239 @@
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Daily Goal"
+                android:layout_span="3"
+                android:padding="10dip"
+                android:background="#a09f9f"
+                android:textColor="#000"
+                android:gravity="center"/>
+        </TableRow>
+
+
+
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/calorierequired"
+                android:text="Calories"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/calorierequiredval"
+                android:text="2000 calories(k)"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/Proteinsrequi"
+                android:text="@string/Protein"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/proteinsreqval"
+                android:text="50g"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="@string/Sodium"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/sodreqval"
+                android:text="2400mg"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/carbsrequi"
+                android:text="@string/Carbs"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/carbsrequval"
+                android:text="300g"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fatrequ"
+                android:text="Fat"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/fatrequval"
+                android:text="65g"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/ironrequ"
+                android:text="@string/Iron"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/ironrequval"
+                android:text="24mg"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/calrequ"
+                android:text="@string/Calcium"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/calreqval"
+                android:text="50mg"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/vitarequv"
+                android:text="Vitamin A"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/vitareqval"
+                android:text="50mg"
+                android:layout_weight="1"
+                android:background="#a09f9f"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:text="VitaMin C"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/vitcreqval"
+                android:text="60mg"
+                android:layout_weight="1"
+                android:background="#b0b0b0"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="left"/>
+        </TableRow>
+
+    </TableLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:clickable="true"
+    android:focusable="false"
+    android:background="@drawable/graph_total_back"
+    >
+
+    <RelativeLayout
+        android:id="@+id/mlTmiddle_img_serve"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_total_graph" >
+
+        <RelativeLayout
+            android:id="@+id/mrelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/mmlTotalserving_size_grams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:textSize="@dimen/textsize_11"
+                android:text="@string/dailynutrition"
+                android:textStyle="bold"
+                android:textColor="@color/SKY_BLUE_TABS" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mllinearLaygraph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/mlTmiddle_img_serve" >
+
+        <View
+            android:id="@+id/mlviewmarker100"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/mlviewx"
+            android:layout_toRightOf="@+id/mltv100"
+            android:background="@color/STATUSBARCOLOR" />
+
+        <View
+            android:id="@+id/mlviewx"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mltv100"
+            android:background="@color/STATUSBARCOLOR" />
+
+        <TextView
+            android:id="@+id/mltv140"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mltv100"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_8sp" />
+
+        <RelativeLayout
+            android:id="@+id/mlCAL_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/mlviewx"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlTcaloriesview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/CALORIES"
+                android:maxHeight="75dp"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mlPROT_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_below="@+id/mlviewmarker100"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mlCARBS_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlTProtienview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/SODIUM"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mlFAT_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mlPROT_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlTFiberview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/PROTIEN"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mlsod"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_alignTop="@+id/mlFAT_REL"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mlFAT_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlTsodiumview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/FAT"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mlvitarel"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_below="@+id/mlviewmarker100"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mlsod"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlvita"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/VITAMINA"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mlvitcreal"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_alignTop="@+id/mlviewmarker100"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mlvitarel"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlvitc"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/VITAMINC"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mlCARBS_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/minclude1"
+            android:layout_alignTop="@+id/mlFAT_REL"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mlCAL_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/mlTcarbsview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/CARBS"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/minclude1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mlCAL_REL"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/mlvitcreal"
+            layout="@layout/meal_day_per" />
+
+        <TextView
+            android:id="@+id/mltv100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/mlviewmarker100"
+            android:paddingLeft="4dp"
+            android:text="@string/L100"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_10" />
+
+        <View
+            android:id="@+id/mlviewmarker50"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/mltv40"
+
+            android:background="@color/STATUSBARCOLOR" />
+
+        <TextView
+            android:id="@+id/mltv40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/mltv100"
+            android:layout_centerVertical="true"
+            android:paddingLeft="4dp"
+            android:text="@string/LS50"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_10" />
+
+        <TextView
+            android:id="@+id/mltv0s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mlviewx"
+            android:layout_toLeftOf="@+id/mlviewx"
+            android:paddingLeft="4dp"
+            android:text="@string/Zero"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_10" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mlPROT_REL"
+            android:layout_alignLeft="@+id/mlCAL_REL"
+
+            android:layout_alignRight="@+id/mlvitcreal"
+            layout="@layout/meal_day_desc_value" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

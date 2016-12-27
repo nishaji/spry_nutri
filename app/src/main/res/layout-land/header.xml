@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+	android:background="#ffffff"
+    
+      >   
+  <RelativeLayout
+       android:id="@+id/nolinearcategoriesbtn"
+       android:layout_width="match_parent"
+       
+       android:layout_height="wrap_content"
+       
+       android:background="@color/White"
+       android:paddingBottom="17dp"
+       
+       android:paddingTop="17dp" >
+
+       <TextView
+           android:id="@+id/noprovi"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:background="@color/CALORIES"
+           android:gravity="center_vertical"
+           android:layout_marginLeft="@dimen/dp4"
+           android:text="" />
+
+       <TextView
+           android:id="@+id/notvprotiendesclabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/noprovi"
+           android:layout_alignTop="@+id/noprovi"
+           android:layout_toRightOf="@+id/noprovi"
+           android:gravity="center_vertical"
+       
+           android:paddingLeft="2dp"
+           android:text="@string/caloriesk"
+           android:textColor="@color/STATUSBARCOLOR"
+           />
+
+       <TextView
+           android:id="@+id/notvfiberdesclabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/notv20"
+           android:layout_alignTop="@+id/notv20"
+           android:layout_toRightOf="@+id/notv20"
+           android:gravity="center_vertical"
+           android:paddingLeft="2dp"
+           android:paddingRight="2dp"
+           android:text="@string/proteing"
+           android:textColor="@color/STATUSBARCOLOR"
+            />
+
+       <TextView
+           android:id="@+id/notvcaloriesdesclabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/notextView7"
+           android:layout_alignTop="@+id/notextView7"
+           android:layout_toRightOf="@+id/notextView7"
+           android:gravity="center_vertical"
+          android:paddingLeft="2dp"
+           android:paddingRight="2dp"
+           android:text="@string/fatg"
+           android:textColor="@color/STATUSBARCOLOR"
+           />
+
+       <TextView
+           android:id="@+id/notv20"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:layout_marginLeft="@dimen/dp4"
+           android:layout_toRightOf="@+id/notvprotiendesclabel"
+           android:background="@color/CARBS" />
+       <TextView
+           android:id="@+id/notextView7"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:layout_toRightOf="@+id/notvsodiumdesclabel"
+           android:background="@color/PROTIEN"
+           android:layout_marginLeft="@dimen/dp4"
+           android:textColor="@color/STATUSBARCOLOR" />
+
+       <TextView
+           android:id="@+id/novitcreqval"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:layout_marginLeft="@dimen/dp4"
+           android:layout_toRightOf="@+id/notvfiberdesclabel"
+           android:background="@color/SODIUM" />
+
+       <TextView
+           android:id="@+id/notvsodiumdesclabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/notextView7"
+           android:layout_alignParentTop="true"
+           android:layout_toRightOf="@+id/novitcreqval"
+           android:gravity="center_vertical"
+          android:paddingLeft="2dp"
+           android:paddingRight="2dp"
+           android:text="@string/carbsg"
+           android:textColor="@color/STATUSBARCOLOR"
+           />
+
+       <TextView
+           android:id="@+id/notvcarbsdesclabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/notvcaloriesdesclabel"
+           android:layout_alignTop="@+id/notextView9"
+           android:layout_toRightOf="@+id/notextView9"
+           android:gravity="center_vertical"
+           android:paddingLeft="2dp"
+           android:text="@string/sodiummg"
+           android:textColor="@color/STATUSBARCOLOR"
+           />
+
+       <TextView
+           android:id="@+id/notextView9"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:layout_alignBottom="@+id/notvcaloriesdesclabel"
+           android:layout_toRightOf="@+id/notvcaloriesdesclabel"
+           android:layout_marginLeft="@dimen/dp4"
+           android:background="@color/FAT" />
+
+       <TextView
+           android:id="@+id/colorvita"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:layout_marginLeft="@dimen/dp4"
+           android:layout_alignBottom="@+id/notvcarbsdesclabel"
+           android:layout_alignTop="@+id/notvcarbsdesclabel"
+           android:layout_toRightOf="@+id/notvcarbsdesclabel"
+           android:background="@color/VITAMINA" />
+
+       <TextView
+           android:id="@+id/labelvitC"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/colorvitC"
+           android:layout_alignTop="@+id/colorvita"
+           android:layout_marginLeft="@dimen/dp4"
+           android:layout_toRightOf="@+id/colorvitC"
+           android:text="@string/vitC"
+           android:gravity="center_vertical"
+           android:textColor="@color/STATUSBARCOLOR"
+           />
+
+       <TextView
+           android:id="@+id/colorvitC"
+           android:layout_width="@dimen/dp20"
+           android:layout_height="@dimen/dp20"
+           android:layout_alignBottom="@+id/labelvita"
+           android:layout_marginLeft="@dimen/dp4"
+           android:layout_toRightOf="@+id/labelvita"
+           android:background="@color/VITAMINC" />
+
+       <TextView
+           android:id="@+id/labelvita"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/colorvita"
+           android:layout_alignTop="@+id/colorvita"
+           android:layout_toRightOf="@+id/colorvita"
+           android:text="@string/vitA"
+           android:layout_marginLeft="@dimen/dp4"
+           android:gravity="center_vertical"
+           android:textColor="@color/STATUSBARCOLOR"
+           />
+       
+       </RelativeLayout>
+   
+  </LinearLayout>

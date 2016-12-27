@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/user_layout"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardElevation="20dp"
+        android:padding="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding= "5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/icon_entry"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/circular_textview"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="B"
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:textSize="32sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvname_categories"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/textsize_10"
+                android:layout_weight=".8"
+               android:textColor="#000"
+                android:text="4"/>
+
+            <ImageView
+                android:id="@+id/imgedit_my_daily"
+                android:layout_width="wrap_content"
+                android:layout_weight=".1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:contentDescription="@string/imageload"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_pen"
+               />
+
+            <ImageView
+                android:id="@+id/imgdele_my_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:contentDescription="@string/imageload"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/delete_box" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

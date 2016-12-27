@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#f1f2f2"
+    android:orientation="vertical"    >
+    
+    
+    
+    
+    <!--Details View of the Row Elements Are -->
+		
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:orientation="horizontal">
+            <!--For the Image View of the Checkbox type elements-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_setting"
+                android:id="@+id/limg_setting"
+                        android:contentDescription="@string/imageload"
+                android:visibility="gone"/>
+            <!--Now for the Description of the elements in the row with their name and and brand name-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               	android:gravity="center_vertical"
+                android:layout_weight=".75">
+
+                <TextView
+                    android:id="@+id/lserving_size_grams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="as"
+                    
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@drawable/text_save_selector"
+                     />
+
+                <TextView
+                    android:id="@+id/litem_brand_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23.5dp"
+                     android:layout_gravity="center_horizontal"
+                    
+                    android:text="as"
+                    android:maxLines="2"
+                     />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Graph View of the Different elements in the row W.R.T their identity-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:orientation="horizontal">
+            <RelativeLayout
+            android:id="@+id/llinearLaygraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/list_item_back"
+            android:layout_toRightOf="@+id/listTmiddle_img_serve"
+        >
+ 
+<TextView
+    android:id="@+id/listTv0s"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignRight="@+id/listTv100"
+    android:paddingLeft="4dp"
+    android:text="@string/Zero"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textSize="@dimen/textsize_8sp" />
+
+<!-- 
+<TextView
+    android:id="@+id/listTv600"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="2dp"
+    android:text="560 >"
+ 	android:paddingLeft="2dp"
+ 
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textSize="@dimen/textsize_8sp" /> -->
+
+ <TextView
+     android:id="@+id/listTv40"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/listTv0s"
+     android:layout_alignParentLeft="true"
+     android:layout_alignRight="@+id/listTv0s"
+     
+     android:paddingLeft="4dp"
+     android:text="@string/L50"
+     android:layout_marginBottom="26dp"
+     android:textAppearance="?android:attr/textAppearanceSmall"
+     android:textSize="@dimen/textsize_8sp" />
+<View 
+    android:id="@+id/lviewmarker100"
+    android:layout_width="6dp"
+    android:layout_toRightOf="@+id/listTv100"
+    android:layout_height="1dp"
+     android:background="@color/STATUSBARCOLOR"
+    android:layout_alignTop="@+id/lviewx"/>
+
+<View
+    android:id="@+id/lviewmarker50"
+    android:layout_width="6dp"
+    android:layout_height="1dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="40dp"
+    android:layout_toRightOf="@+id/listTv40"
+    android:background="@color/STATUSBARCOLOR" />
+
+<TextView
+    android:id="@+id/listTv100"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="6dp"
+    android:paddingLeft="4dp"
+    android:text="@string/L100"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textSize="@dimen/textsize_8sp" />
+
+<View
+    android:layout_width="1dp"
+    android:id="@+id/lviewx"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/listTv100"
+    android:layout_marginLeft="5dp"
+    android:background="@color/STATUSBARCOLOR" />
+
+<TextView
+    android:id="@+id/listTv140"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/listTv100"
+    android:layout_marginBottom="1dp"
+    android:layout_marginRight="20dp"
+    android:paddingLeft="2dp"
+    android:text=""
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textSize="@dimen/textsize_8sp" />
+ 	<RelativeLayout 
+ 	android:layout_width="@dimen/dp45"
+    android:layout_height="@dimen/dp79"
+    android:layout_toRightOf="@+id/lCAL_REL"
+    android:id="@+id/lCARBS_REL"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="1dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/column_graph_back">
+
+ 	 <TextView
+ 	     android:id="@+id/listTcarbsview"
+ 	     android:layout_width="@dimen/dp45"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_alignParentBottom="true"
+ 	     android:layout_marginLeft="0.5dp"
+    	 android:layout_marginRight="0.4dp"
+ 	     android:background="@color/CARBS"
+ 	     android:maxHeight="@dimen/L195px"
+ 	     android:text="" />
+
+ 	 <TextView
+    android:id="@+id/listTcarbs_desc_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/listTcarbsview"
+    android:layout_alignLeft="@+id/listTcarbsview"
+    android:layout_alignRight="@+id/listTcarbsview"
+    android:text=""
+    android:gravity="center"
+    android:textSize="@dimen/textsize_go" />
+</RelativeLayout>
+<RelativeLayout android:layout_width="@dimen/dp45"
+    android:layout_height="@dimen/dp79"
+    
+    android:id="@+id/lPROT_REL"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="1dp"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/lCARBS_REL"
+    android:background="@drawable/column_graph_back">
+<TextView
+        android:id="@+id/listTProtienview"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="wrap_content"
+        android:background="@color/SODIUM"
+         android:layout_marginLeft="0.5dp"
+       android:layout_marginRight="0.4dp"
+        
+        android:maxHeight="@dimen/L195px"
+      	android:layout_alignParentBottom="true"
+      	
+        />
+<TextView
+    android:id="@+id/listTprot_desc_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/listTProtienview"
+    android:layout_alignLeft="@+id/listTProtienview"
+    android:layout_alignRight="@+id/listTProtienview"
+    android:text=""
+    android:gravity="center"
+    android:textSize="@dimen/textsize_go" />
+
+</RelativeLayout>
+
+<RelativeLayout android:layout_width="@dimen/dp45"
+    android:layout_height="@dimen/dp79"
+    android:layout_toRightOf="@+id/lPROT_REL"
+    android:id="@+id/lFAT_REL"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="5dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/column_graph_back">
+<TextView
+    android:id="@+id/listTFiberview"
+    android:layout_width="@dimen/dp45"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/L195px"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="0.5dp"
+    android:layout_marginRight="0.4dp"
+    android:background="@color/PROTIEN"
+    />
+
+
+<TextView
+    android:id="@+id/listTFiber_desc_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/listTFiberview"
+    android:layout_alignLeft="@+id/listTFiberview"
+    android:layout_alignRight="@+id/listTFiberview"
+    android:text=""
+    android:gravity="center"
+    android:textSize="@dimen/textsize_go" />
+</RelativeLayout>
+<RelativeLayout android:layout_width="@dimen/dp45"
+    android:layout_height="@dimen/dp79"
+    
+    android:layout_toRightOf="@+id/lFAT_REL"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="1dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/column_graph_back">
+<TextView
+    android:id="@+id/listTsodiumview"
+    android:layout_width="@dimen/dp45"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0.5dp"
+    android:layout_marginRight="0.4dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/FAT"
+    android:maxHeight="@dimen/L195px"
+    />
+<TextView
+    android:id="@+id/listTsodium_desc_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/listTsodiumview"
+    android:layout_alignLeft="@+id/listTsodiumview"
+    android:layout_alignRight="@+id/listTsodiumview"
+    android:text=""
+    android:gravity="center"
+    android:textSize="@dimen/textsize_go" />
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="@dimen/dp45"
+    android:layout_height="@dimen/dp79"
+    android:layout_toRightOf="@+id/lviewx"
+    android:id="@+id/lCAL_REL"
+    android:layout_marginLeft="8dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/column_graph_back">
+
+<TextView
+    android:id="@+id/listTcaloriesview"
+    android:layout_width="@dimen/dp45"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="0.5dp"
+    android:layout_marginRight="0.4dp"
+    android:background="@color/CALORIES"
+    android:text=""
+    android:maxHeight="@dimen/L195px" />
+
+<TextView
+    android:id="@+id/listTcal_desc_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/listTcaloriesview"
+    android:layout_alignLeft="@+id/listTcaloriesview"
+    android:layout_alignRight="@+id/listTcaloriesview"
+    android:gravity="center"
+    android:text=""
+    android:textSize="@dimen/textsize_go" />
+ </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+   </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Action Layout of the button in the row Like Previous and Next and well as Add -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/White">
+
+ <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_minus_demon"
+            android:layout_gravity="right"
+                    android:contentDescription="@string/imageload"
+            android:layout_weight=".1"
+            android:id="@+id/limg_right_view"
+            />
+
+        <ImageView
+            android:id="@+id/limage_serve_eqivalent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball"
+            android:layout_weight=".1"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/imageload"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ldata_qty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ldata_serving_details"/>
+
+
+       
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus_demon"
+            android:id="@+id/limg_left_view"
+                    android:contentDescription="@string/imageload"
+            android:layout_weight=".1"
+            android:layout_gravity="left"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#f1f2f2"
+    android:orientation="vertical"
+    >
+    <!--Details View of the Row Elements Are -->
+ <!-- Including the grid view layout in the android  -->
+                
+    
+    <!-- Adding of the Add view preferences to choose the different Values for the row selected -->
+    	
+    	
+    	<include
+    	     android:id="@+id/add_view_hole"
+    		 android:layout_width="match_parent"
+    		 android:layout_height="120dp"
+			 layout="@layout/view_add_grid_categories"
+			 android:visibility="gone"
+    	/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:orientation="horizontal">
+            <!--For the Image View of the Checkbox type elements-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:layout_alignParentLeft="true"
+                
+                >
+
+                <com.Spry.Design.CircleButton
+                    android:id="@+id/save_item_box"
+                    android:layout_width="@dimen/fab_button_diameter_landscape"
+                    android:layout_height="@dimen/fab_button_diameter_landscape"
+                    android:layout_alignLeft="@+id/myImageViewText"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="@dimen/fab_button_diameter_landscape"
+                    android:layout_height="@dimen/fab_button_diameter_landscape"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/save_item_box"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="T"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#234521" />
+
+            </RelativeLayout>
+
+            <!--Now for the Description of the elements in the row with their name and and brand name-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".75">
+
+                <TextView
+                    android:id="@+id/serving_size_grams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="as"
+                    android:textColor="@drawable/text_save_selector"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_brand_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="as"
+                    android:textSize="15sp"
+                    android:maxLines="2"
+                     />
+            </LinearLayout>
+<ImageView 
+    
+    android:id="@+id/imageviewhiddenflip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:contentDescription="@string/imageload"
+    />
+        </LinearLayout>
+
+        <!--Graph View of the Different elements in the row W.R.T their identity-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/linearLaygraph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/list_item_back" >
+                <TextView
+                    android:id="@+id/tv0s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/tv100"
+                    android:paddingLeft="4dp"
+                    android:text="@string/Zero"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/textsize_8sp" />
+
+
+                <TextView
+                    android:id="@+id/tv40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv0s"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/tv0s"
+                    android:layout_marginBottom="26dp"
+                    android:paddingLeft="4dp"
+                    android:text="@string/L25"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/textsize_8sp" />
+
+                <View
+                    android:id="@+id/viewmarker100"
+                    android:layout_width="6dp"
+                    android:layout_height="1dp"
+                    android:layout_alignTop="@+id/viewx"
+                    android:layout_toRightOf="@+id/tv100"
+                    android:background="#c3c6ca" />
+
+                <View
+                    android:id="@+id/viewmarker50"
+                    android:layout_width="6dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_toRightOf="@+id/tv40"
+                    android:background="#c3c6ca" />
+
+                <TextView
+                    android:id="@+id/tv100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/L50"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/textsize_8sp" />
+
+                <View
+                    android:id="@+id/viewx"
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tv100"
+                    android:background="#d9dbdd" />
+
+                <TextView
+                    android:id="@+id/tv140"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv100"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="2dp"
+
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/textsize_8sp" />
+
+                <RelativeLayout
+                    android:id="@+id/CARBS_REL"
+                    android:layout_width="45dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/CAL_REL"
+                    android:background="@drawable/column_graph_alternate_back" >
+
+                    <TextView
+                        android:id="@+id/carbsview"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginRight="0.4dp"
+                        android:background="@color/CARBS"
+                        android:maxHeight="@dimen/L195px"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/carbs_desc_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/carbsview"
+                        android:layout_alignLeft="@+id/carbsview"
+                        android:layout_alignRight="@+id/carbsview"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/textsize_go" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/PROT_REL"
+                    android:layout_width="45dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/CARBS_REL"
+                    android:background="@drawable/column_graph_back" >
+
+                    <TextView
+                        android:id="@+id/Protienview"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginRight="0.4dp"
+                        android:background="@color/SODIUM"
+                        android:maxHeight="@dimen/L195px" />
+
+                    <TextView
+                        android:id="@+id/prot_desc_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Protienview"
+                        android:layout_alignLeft="@+id/Protienview"
+                        android:layout_alignRight="@+id/Protienview"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/textsize_go" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FAT_REL"
+                    android:layout_width="45dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/PROT_REL"
+                    android:background="@drawable/column_graph_alternate_back" >
+
+                    <TextView
+                        android:id="@+id/Fiberview"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginRight="0.4dp"
+                        android:background="@color/PROTIEN"
+                        android:maxHeight="@dimen/L195px" />
+
+                    <TextView
+                        android:id="@+id/Fiber_desc_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Fiberview"
+                        android:layout_alignLeft="@+id/Fiberview"
+                        android:layout_alignRight="@+id/Fiberview"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/textsize_go" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="45dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/FAT_REL"
+                    android:background="@drawable/column_graph_back" >
+
+                    <TextView
+                        android:id="@+id/sodiumview"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginRight="0.4dp"
+                        android:background="@color/FAT"
+                        android:maxHeight="@dimen/L195px" />
+
+                    <TextView
+                        android:id="@+id/sodium_desc_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/sodiumview"
+                        android:layout_alignLeft="@+id/sodiumview"
+                        android:layout_alignRight="@+id/sodiumview"
+                        android:gravity="center"
+
+                        android:textSize="@dimen/textsize_go" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/CAL_REL"
+                    android:layout_width="45dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/viewx"
+                    android:background="@drawable/column_graph_back" >
+
+                    <TextView
+                        android:id="@+id/caloriesview"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginRight="0.4dp"
+                        android:background="@color/CALORIES"
+                        android:maxHeight="@dimen/L195px"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/cal_desc_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/caloriesview"
+                        android:layout_alignLeft="@+id/caloriesview"
+                        android:layout_alignRight="@+id/caloriesview"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/textsize_go" />
+                </RelativeLayout>
+               
+              
+            </RelativeLayout>
+			  
+        </LinearLayout>
+			
+    </LinearLayout>
+
+    <!--Action Layout of the button in the row Like Previous and Next and well as Add -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/White">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left"
+                    android:contentDescription="@string/imageload"
+            android:id="@+id/img_left_view"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right"
+                    android:contentDescription="@string/imageload"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_right_view"
+            />
+		
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:id="@+id/image_serve_eqivalent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball"
+            android:contentDescription="@string/imageload"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_serve_eqivalent"
+            android:id="@+id/data_qty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/data_qty"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/data_serving_details"/>
+
+</RelativeLayout>
+        
+    </RelativeLayout>
+   
+</LinearLayout>

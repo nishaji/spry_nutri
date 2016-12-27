@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:paddingTop="5dp"
+    android:background="#757575">
+    
+   
+    	<Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:layout_weight="1"
+        android:onClick="MyMeals"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableTop="@drawable/my_meals"
+        android:text="@string/cate"
+        android:id="@+id/btnsMymeal"
+
+        />
+        <Button
+            android:id="@+id/btngoalsview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+         
+            android:drawableTop="@drawable/daily_goal"
+            android:text="@string/title_activity_daily__goal"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:onClick="mydailyPlans"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnmealplanview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTop="@drawable/meal_plan"
+            android:text="@string/preferances"
+
+            />
+
+
+</LinearLayout>

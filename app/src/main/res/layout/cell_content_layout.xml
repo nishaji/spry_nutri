@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <!-- content header line -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgContentTop"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/tvitemnameshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:text="Milk"
+            android:maxLines="1"
+            android:ems="9"
+            android:maxLength="27"/>
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:text="From:"
+            android:layout_below="@+id/tvitemnameshow" />
+        <TextView
+            android:id="@+id/detailbrand"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:text="USDA"
+            android:layout_toRightOf="@+id/from"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:ems="7"/>
+        <TextView
+            android:id="@+id/serving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:text="Serving Size:"
+            />
+        <TextView
+            android:id="@+id/tvitemdetailsShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/serving"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:text="1 Cup"
+            android:maxLines="1"
+            android:ems="8"/>
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edtvalue"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:id="@+id/imageminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:src ="@drawable/plus_minus"
+                android:layout_toLeftOf="@+id/servingg"
+                />
+            <TextView
+                android:id="@+id/servingg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:alpha="0.7"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:src="@drawable/plusbackborder"
+                android:layout_toRightOf="@+id/servingg"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- content header image -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:orientation="horizontal"
+            >
+
+        <RelativeLayout
+            android:id="@+id/llinearLaygraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            >
+
+            <TextView
+                android:id="@+id/listTv0s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/listTv100"
+                android:paddingLeft="4dp"
+                android:text="@string/Zero"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/listTv40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/listTv0s"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/listTv0s"
+
+                android:paddingLeft="4dp"
+                android:text="@string/L50"
+                android:layout_marginBottom="26dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp" />
+            <View
+                android:id="@+id/lviewmarker100"
+                android:layout_width="6dp"
+                android:layout_toRightOf="@+id/listTv100"
+                android:layout_height="1dp"
+                android:background="@color/STATUSBARCOLOR"
+                />
+
+            <View
+                android:id="@+id/lviewmarker50"
+                android:layout_width="6dp"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_toRightOf="@+id/listTv40"
+                android:background="@color/STATUSBARCOLOR" />
+
+            <TextView
+                android:id="@+id/listTv100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="4dp"
+                android:text="@string/L100"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:id="@+id/lviewx"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/listTv100"
+                android:layout_marginLeft="2dp"
+                android:background="@color/STATUSBARCOLOR" />
+
+            <TextView
+                android:id="@+id/listTv140"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/listTv100"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="2dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/textsize_8sp" />
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/lCAL_REL"
+                android:id="@+id/lCARBS_REL"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/column_graph_back">
+
+                <TextView
+                    android:id="@+id/detailcarbo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.4dp"
+                    android:background="@color/CARBS"
+                    android:maxHeight="@dimen/L195px"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/detailcarbo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/detailcarbo"
+                    android:layout_alignLeft="@+id/detailcarbo"
+                    android:layout_alignRight="@+id/detailcarbo"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_go" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:id="@+id/lPROT_REL"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/lCARBS_REL"
+                android:background="@drawable/column_graph_back">
+                <TextView
+                    android:id="@+id/detailprotein"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/SODIUM"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.4dp"
+
+                    android:maxHeight="@dimen/L195px"
+                    android:layout_alignParentBottom="true"
+
+                    />
+                <TextView
+                    android:id="@+id/detailprotein1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/detailprotein"
+                    android:layout_alignLeft="@+id/detailprotein"
+                    android:layout_alignRight="@+id/detailprotein"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_go" />
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/lPROT_REL"
+                android:id="@+id/lFAT_REL"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/column_graph_back">
+                <TextView
+                    android:id="@+id/detailfiber"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/L195px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.4dp"
+                    android:background="@color/PROTIEN"
+                    />
+
+
+                <TextView
+                    android:id="@+id/detailfiber1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/detailfiber"
+                    android:layout_alignLeft="@+id/detailfiber"
+                    android:layout_alignRight="@+id/detailfiber"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_go" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lastlay"
+                android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/lFAT_REL"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/column_graph_back">
+                <TextView
+                    android:id="@+id/detailsodium"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.4dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/FAT"
+                    android:maxHeight="@dimen/L195px"
+                    />
+                <TextView
+                    android:id="@+id/detailsodium1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/detailsodium"
+                    android:layout_alignLeft="@+id/detailsodium"
+                    android:layout_alignRight="@+id/detailsodium"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_go" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/lviewx"
+                android:id="@+id/lCAL_REL"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/column_graph_back">
+
+                <TextView
+                    android:id="@+id/detailcalory"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.4dp"
+                    android:background="@color/CALORIES"
+                    android:text=""
+                    android:maxHeight="@dimen/L195px" />
+
+                <TextView
+                    android:id="@+id/detailcaory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/detailcalory"
+                    android:layout_alignLeft="@+id/detailcalory"
+                    android:layout_alignRight="@+id/detailcalory"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="@dimen/textsize_go" />
+            </RelativeLayout>
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- content body layout -->
+        <LinearLayout
+            android:background="@color/bgContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="1dp">
+            <!-- divider line -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- dates part -->
+
+
+            <RelativeLayout
+                android:id="@+id/relcalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_below="@+id/linearLayout4"
+                android:background="#a09797">
+
+                <TextView
+                    android:id="@+id/tvcaloriesShow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px"
+                    android:paddingLeft="4dp"
+                    android:text="@string/Calories" />
+
+                <TextView
+                    android:id="@+id/tvcaloriesValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvcaloriesShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_1rel"
+                    android:layout_toRightOf="@+id/tvcaloriesShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_1rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvcaloriesShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#a09797" >
+
+                    <TextView
+                        android:id="@+id/tvCaloriePerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvCaloriesPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- divider line -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- addresses part -->
+            <RelativeLayout
+                android:id="@+id/relTotalfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#b0b0b0"
+                android:paddingTop="5dp"
+
+                android:paddingBottom="5dp"
+
+                android:layout_below="@+id/relcalories" >
+
+                <TextView
+                    android:id="@+id/tvfatShow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="4dp"
+                    android:textSize="@dimen/L30px"
+                    android:textColor="#fff"
+                    android:text="@string/Total" />
+
+                <TextView
+                    android:id="@+id/tvFatValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvfatShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_2rel"
+                    android:layout_toRightOf="@+id/tvfatShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_2rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvfatShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#b0b0b0" >
+
+                    <TextView
+                        android:id="@+id/tvFatPerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvFatPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- divider line -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- dates part -->
+            <RelativeLayout
+                android:id="@+id/relTotalSatfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relCholestrol"
+                android:layout_below="@+id/relTotalfat"
+                android:layout_marginRight="2dp"
+
+                android:paddingTop="5dp"
+
+                android:paddingBottom="5dp"
+               android:background="#a09797" >
+
+                <TextView
+                    android:id="@+id/tvSatfatShow"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px"
+
+                    android:text="@string/Saturated" />
+
+                <TextView
+                    android:id="@+id/tvSatFatValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvSatfatShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_7rel"
+                    android:layout_toRightOf="@+id/tvSatfatShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_7rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvSatfatShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#a09797" >
+
+                    <TextView
+                        android:id="@+id/tvSatFatPerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvSatFatPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- dates part -->
+            <RelativeLayout
+                android:id="@+id/relCholestrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relSodium"
+                android:layout_below="@+id/relTotalSatfat"
+                android:layout_marginRight="2dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="#b0b0b0"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvCholestrolShow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="4dp"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px"
+                    android:text="@string/Cholestrol" />
+
+                <TextView
+                    android:id="@+id/tvCholestrolValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvCholestrolShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_3rel"
+                    android:layout_toRightOf="@+id/tvCholestrolShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_3rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvCholestrolShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#b0b0b0" >
+
+                    <TextView
+                        android:id="@+id/tvCholestrolPerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvCholestrolPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- dates part -->
+            <RelativeLayout
+                android:id="@+id/relSodium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:paddingTop="5dp"
+
+                android:paddingBottom="5dp"
+
+                android:layout_below="@+id/relCholestrol"
+                android:background="#a09797">
+
+                <TextView
+                    android:id="@+id/tvSodiumShow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px"
+                    android:paddingLeft="4dp"
+                    android:text="@string/Sodium" />
+
+                <TextView
+                    android:id="@+id/tvSodiumValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvSodiumShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_4rel"
+                    android:layout_toRightOf="@+id/tvSodiumShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_4rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvSodiumShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#a09797" >
+
+                    <TextView
+                        android:id="@+id/tvSodiumPerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvSodiumPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- dates part -->
+            <RelativeLayout
+                android:id="@+id/relCarbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:paddingTop="5dp"
+                android:background="#a0a0a0"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/relSodium" >
+
+                <TextView
+                    android:id="@+id/tvCarbsShow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="4dp"
+                    android:textSize="@dimen/L30px"
+                    android:textColor="#fff"
+
+                    android:text="@string/Carbs" />
+
+                <TextView
+                    android:id="@+id/tvCarbsValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvCarbsShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_5rel"
+                    android:layout_toRightOf="@+id/tvCarbsShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_5rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvCarbsShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#a0a0a0" >
+
+                    <TextView
+                        android:id="@+id/tvCarbsPerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvCarbsPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <!-- dates part -->
+            <RelativeLayout
+                android:id="@+id/relProtein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:paddingTop="5dp"
+
+                android:paddingBottom="5dp"
+
+
+                android:layout_below="@+id/relCarbs"
+                android:background="#a09797">
+
+                <TextView
+                    android:id="@+id/tvProteinShow"
+                    android:layout_width="100dp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="4dp"
+                    android:textSize="@dimen/L30px"
+
+                    android:text="@string/Protein" />
+
+                <TextView
+                    android:id="@+id/tvProteinValueShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvProteinShow"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/_6rel"
+                    android:layout_toRightOf="@+id/tvProteinShow"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:text="@string/Zero"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/L30px" />
+
+                <RelativeLayout
+                    android:id="@+id/_6rel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvProteinShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#a09797" >
+
+                    <TextView
+                        android:id="@+id/tvProteinPerGraphValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvProteinPerValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+            <RelativeLayout
+                android:id="@+id/relVitaminA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:paddingTop="5dp"
+                android:background="#a0a0a0"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/relProtein" >
+
+                <TextView
+                    android:id="@+id/tvVitAShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="4dp"
+                    android:textSize="@dimen/L30px"
+                    android:text="@string/vita" />
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvVitAShow"
+                    android:layout_alignParentRight="true"
+
+                    android:background="#a0a0a0" >
+
+                    <TextView
+                        android:id="@+id/tvVitminAPerValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:text=""
+                        android:textColor="#898e96" />
+
+                    <TextView
+                        android:id="@+id/tvVitminAValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+
+            <RelativeLayout
+                android:id="@+id/relVitaminB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relVitaminA"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                 android:background="#a09797"
+
+                >
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvVitBShow"
+                    android:layout_alignParentRight="true"
+                    android:background="#a09797" >
+                    <TextView
+                        android:id="@+id/tvVitminBPerValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="#FFC279"
+                        android:textColor="#898e96"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvVitminBValueShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+
+                        android:text="@string/Zero"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/L30px" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tvVitBShow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#fff"
+                    android:paddingLeft="4dp"
+                    android:textSize="@dimen/L30px"
+                    android:text="@string/vitc" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@color/contentDividerLine" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

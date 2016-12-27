@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Whole Consists of three Row and at last one contains Control Like OK And Cancel-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+    <!--For The LAN 1 Four Views Each-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvreferance_detail"
+            android:textSize="10sp"
+            
+            />
+        
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="18dp"
+    android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:visibility="gone"
+                            android:id="@+id/ckbox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/textsize_11"
+                            android:text=""/>
+
+
+                <!--lv2-->
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/ckbox2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"            
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textsize_11"
+           />
+
+        <!--lv3-->
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/ckbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_11"
+            android:layout_weight="1"
+            android:text=""/>
+
+
+        <!--lv4-->
+
+    </LinearLayout>
+
+    <!--For The LAN 2 Four Views Each-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/ckbox4"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_11"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:text=""/>
+
+
+        <CheckBox
+            android:id="@+id/ckbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:textSize="@dimen/textsize_11"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:text=""/>
+
+
+        <CheckBox
+            android:id="@+id/ckbox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize_11"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:text=""/>
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="23dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/ckbox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/textsize_11"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:visibility="gone"
+        android:text=""/>
+
+
+    <CheckBox
+        android:id="@+id/ckbox8"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:textSize="@dimen/textsize_11"
+        android:layout_weight="1"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/textsize_11"
+        android:layout_weight="1"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+</LinearLayout>
+    </LinearLayout>
+
+    <!--For The Actions View in android value-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="@string/btnadd"
+                android:background="@color/White"
+                android:id="@+id/btnaddOk"
+                style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="@string/btndiscard"
+            android:background="@color/White"
+            android:id="@+id/btnaddCancel"
+             style="?android:attr/buttonBarButtonStyle"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

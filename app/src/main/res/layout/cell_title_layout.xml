@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgContent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    >
+
+
+    <include
+        android:id="@+id/add_view_hole"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        layout="@layout/view_add_grid_categories"
+        android:visibility="gone"
+        />
+    <!-- LEFT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/bgTitleLeft"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="105dp"
+                android:layout_height="155dp"
+                android:orientation="horizontal"
+                android:background="@color/bgTitleLeft">
+                <RelativeLayout
+                    android:id="@+id/linearLaygraph"
+                    android:layout_width="105dp"
+                    android:layout_height="155dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/CARBS_REL"
+                        android:layout_width="30dp"
+                        android:layout_height="155dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/CAL_REL"
+                        android:background="@color/bgTitleLeft" >
+
+                        <TextView
+                            android:id="@+id/carbsview"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="@color/CARBS"
+                            android:maxHeight="@dimen/L195px"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/carbs_desc_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/carbsview"
+                            android:layout_alignLeft="@+id/carbsview"
+                            android:layout_alignRight="@+id/carbsview"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/PROT_REL"
+                        android:layout_width="30dp"
+                        android:layout_height="155dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/CARBS_REL"
+                        android:background="@color/bgTitleLeft" >
+
+                        <TextView
+                            android:id="@+id/Protienview"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="@color/SODIUM"
+                            android:maxHeight="@dimen/L195px" />
+
+                        <TextView
+                            android:id="@+id/prot_desc_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/Protienview"
+                            android:layout_alignLeft="@+id/Protienview"
+                            android:layout_alignRight="@+id/Protienview"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/CAL_REL"
+                        android:layout_width="30dp"
+                        android:layout_height="155dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_toRightOf="@+id/viewx"
+                        android:background="@color/bgTitleLeft" >
+
+                        <TextView
+                            android:id="@+id/caloriesview"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.4dp"
+                            android:background="@color/CALORIES"
+                            android:maxHeight="@dimen/L195px"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/cal_desc_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/caloriesview"
+                            android:layout_alignLeft="@+id/caloriesview"
+                            android:layout_alignRight="@+id/caloriesview"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textColor="#fff"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- RIGHT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/bgTitleRight"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp">
+        <ImageView
+            android:id="@+id/addfood"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/addfood"
+            android:layout_marginRight="10dp" />
+        <ImageView
+            android:id="@+id/title_from_to_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/from_to_purple"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/serving_size_grams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/title_from_to_dots"
+            android:layout_marginTop="-5dp"
+            android:layout_toEndOf="@+id/title_from_to_dots"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/title_from_to_dots" />
+
+        <ImageView
+            android:id="@+id/title_from_to_dots_divider"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/serving_size_grams"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/title_from_to_dots"
+            android:src="@color/contentDividerLine"
+            android:layout_toRightOf="@+id/title_from_to_dots" />
+
+        <TextView
+            android:id="@+id/item_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_from_to_dots_divider"
+            android:layout_toEndOf="@id/title_from_to_dots"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/title_from_to_dots" />
+
+        <TextView
+            android:id="@+id/title"
+            android:textStyle="bold"
+            style="@style/TitleBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_brand_name"
+            android:text="Serving Size :"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/serving_size"
+            style="@style/TitleBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

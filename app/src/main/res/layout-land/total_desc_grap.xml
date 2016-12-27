@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="90dp"
+	android:clickable="true"
+	android:focusable="false"
+	android:background="@drawable/graph_total_back"
+	>
+
+	<RelativeLayout
+		android:id="@+id/lTmiddle_img_serve"
+		android:layout_width="172dp"
+		android:layout_height="match_parent"
+		android:background="@drawable/border_total_graph" >
+
+
+
+
+		<TextView
+			android:id="@+id/lTotalserving_size_grams"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="7dp"
+
+			android:layout_marginTop="35dp"
+			android:layout_marginLeft="50dp"
+			android:textStyle="bold" />
+
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/llinearLaygraph"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="15dp"
+		android:layout_toRightOf="@+id/lTmiddle_img_serve"
+		>
+
+		<TextView
+			android:id="@+id/ltv0s"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignRight="@+id/ltv100"
+			android:paddingLeft="4dp"
+			android:text="@string/Zero"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/textsize_8sp" />
+
+
+
+		<TextView
+			android:id="@+id/ltv40"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/ltv0s"
+			android:layout_alignParentLeft="true"
+			android:layout_alignRight="@+id/ltv0s"
+
+			android:paddingLeft="4dp"
+			android:text="@string/L50"
+			android:layout_marginBottom="26dp"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/textsize_8sp" />
+		<View
+			android:id="@+id/lviewmarker100"
+			android:layout_width="6dp"
+			android:layout_toRightOf="@+id/ltv100"
+			android:layout_height="1dp"
+			android:background="#c3c6ca"
+			android:layout_alignTop="@+id/lviewx"/>
+
+		<View
+			android:id="@+id/lviewmarker50"
+			android:layout_width="6dp"
+			android:layout_height="1dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="40dp"
+			android:layout_toRightOf="@+id/ltv40"
+			android:background="#c3c6ca" />
+
+		<TextView
+			android:id="@+id/ltv100"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="6dp"
+			android:paddingLeft="4dp"
+			android:text="@string/L100"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/textsize_8sp" />
+
+		<View
+			android:layout_width="1dp"
+			android:id="@+id/lviewx"
+			android:layout_height="80dp"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/ltv100"
+			android:layout_marginLeft="2dp"
+			android:background="#d9dbdd" />
+
+		<TextView
+			android:id="@+id/ltv140"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/ltv100"
+			android:layout_marginBottom="1dp"
+			android:layout_marginRight="20dp"
+			android:paddingLeft="2dp"
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/textsize_8sp" />
+		<RelativeLayout android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:layout_toRightOf="@+id/lCAL_REL"
+			android:id="@+id/lCARBS_REL"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lTcarbsview"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#5c6166"
+				android:maxHeight="@dimen/L195px"
+				android:text="" />
+
+			<TextView
+				android:id="@+id/lTcarbs_desc_val"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lTcarbsview"
+				android:layout_alignRight="@+id/lTcarbsview"
+				android:gravity="center"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp" />
+			<TextView
+				android:id="@+id/Tcarbplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:id="@+id/lPROT_REL"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="1dp"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/lCARBS_REL"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lTProtienview"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#1abc9c"
+				android:maxHeight="@dimen/L195px" />
+
+			<TextView
+				android:id="@+id/lTprot_desc_val"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lTProtienview"
+				android:layout_alignRight="@+id/lTProtienview"
+				android:gravity="center"
+
+				android:textStyle="bold"
+				android:textSize="@dimen/textsize_7sp" />
+			<TextView
+				android:id="@+id/Tproplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:layout_toRightOf="@+id/lPROT_REL"
+			android:id="@+id/lFAT_REL"
+			android:layout_marginBottom="1dp"
+			android:layout_marginLeft="2dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lTFiberview"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#564f8a"
+				android:maxHeight="@dimen/L195px" />
+
+			<TextView
+				android:id="@+id/lTFiber_desc_val"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lTFiberview"
+				android:layout_alignRight="@+id/lTFiberview"
+				android:gravity="center"
+
+				android:textStyle="bold"
+				android:textSize="@dimen/textsize_7sp"/>
+			<TextView
+				android:id="@+id/Tfibplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:id="@+id/lsod"
+			android:layout_toRightOf="@+id/lFAT_REL"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lTsodiumview"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#428bca"
+				android:maxHeight="@dimen/L195px" />
+
+			<TextView
+				android:id="@+id/lTsodium_desc_val"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lTsodiumview"
+				android:layout_alignRight="@+id/lTsodiumview"
+				android:gravity="center"
+
+				android:textStyle="bold"
+				android:textSize="@dimen/textsize_7sp"/>
+			<TextView
+				android:id="@+id/Tsodplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+		</RelativeLayout>
+
+
+		<RelativeLayout android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:id="@+id/lvitarel"
+			android:layout_toRightOf="@+id/lsod"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lvita"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#f56bbb"
+				android:maxHeight="@dimen/L195px" />
+
+			<TextView
+				android:id="@+id/lvita_desc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lvita"
+				android:layout_alignRight="@+id/lvita"
+				android:gravity="center"
+
+				android:textStyle="bold"
+				android:textSize="@dimen/textsize_7sp"/>
+			<TextView
+				android:id="@+id/Tvitaplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+		</RelativeLayout>
+
+
+		<RelativeLayout android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:id="@+id/lvitcreal"
+			android:layout_toRightOf="@+id/lvitarel"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lvitc"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#7ee547"
+				android:maxHeight="@dimen/L195px" />
+
+			<TextView
+				android:id="@+id/lvitc_desc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lvitc"
+				android:layout_alignRight="@+id/lvitc"
+				android:gravity="center"
+
+				android:textStyle="bold"
+				android:textSize="@dimen/textsize_7sp"/>
+			<TextView
+				android:id="@+id/Tvitcplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+		</RelativeLayout>
+
+
+		<RelativeLayout
+			android:layout_width="50dp"
+			android:layout_height="79dp"
+			android:layout_toRightOf="@+id/lviewx"
+			android:id="@+id/lCAL_REL"
+			android:layout_marginLeft="5dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="1dp"
+			android:background="@drawable/column_graph_back">
+
+			<TextView
+				android:id="@+id/lTcaloriesview"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="0.5dp"
+				android:layout_marginRight="0.4dp"
+				android:background="#d95c5c"
+				android:maxHeight="75dp"
+				android:text="" />
+
+			<TextView
+				android:id="@+id/lTcal_desc_val"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/lTcaloriesview"
+				android:layout_alignRight="@+id/lTcaloriesview"
+				android:gravity="center"
+
+				android:textStyle="bold"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/textsize_7sp" />
+			<TextView
+				android:id="@+id/Tcalplus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+
+				android:textColor="@color/DARK_GREEN"
+				android:textStyle="bold"
+
+				android:textSize="@dimen/textsize_7sp"
+				/>
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>

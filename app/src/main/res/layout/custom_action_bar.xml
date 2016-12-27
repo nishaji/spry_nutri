@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:background="#00BCD4"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="horizontal"
+    style="?android:attr/actionBarSize" >
+    <ImageView
+        android:id="@+id/back_press"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="false"
+        android:paddingLeft="10dp"
+        android:contentDescription="@string/imageload"
+        android:longClickable="false"
+        android:layout_gravity="center_vertical|left"
+        android:src="@drawable/ic_keyboard_backspace_white_24dp"
+         />
+
+    <ImageView
+        android:id="@+id/actionBarLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="false"
+        android:paddingLeft="0dp"
+        android:contentDescription="@string/imageload"
+        android:longClickable="false"
+        android:layout_gravity="center_vertical|left"
+        android:src="@drawable/ic_launcher" />
+
+
+
+    <TextView
+        android:id="@+id/actiontitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:text="@string/app_name"
+        android:paddingLeft="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

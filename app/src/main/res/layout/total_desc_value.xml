@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/GREEN_BACK" >
+    <TextView
+                    android:id="@+id/lTcal_desc_val"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textsize_10"
+                     />
+    
+    
+    <TextView
+                    android:id="@+id/lTcarbs_desc_val"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    
+                    
+                    android:textColor="@android:color/white"
+                     android:layout_marginLeft="@dimen/margin_2dp"
+                    android:textSize="@dimen/textsize_10"
+                     />
+   <TextView
+                    android:id="@+id/lTprot_desc_val"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:layout_marginLeft="@dimen/margin_2dp"
+                    
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@android:color/white"
+                   
+                     />
+   <TextView
+                    android:id="@+id/lTFiber_desc_val"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_10"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    
+                    android:textColor="@android:color/white"
+                   
+                     />
+   <TextView
+                    android:id="@+id/lTsodium_desc_val"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@android:color/white"
+                    
+                    
+                    />
+   <TextView
+                    android:id="@+id/lvita_desc"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_10"
+                    android:gravity="center"
+                    
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:textColor="@android:color/white"
+                    />
+   <TextView
+                    android:id="@+id/lvitc_desc"
+                    android:layout_width="@dimen/text_value_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    /> 
+   
+   
+
+</LinearLayout>

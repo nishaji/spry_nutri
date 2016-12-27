@@ -1,0 +1,337 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/layout_background">
+ <LinearLayout 
+        
+        android:id="@+id/tabs"
+    	android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+        <Button 
+            android:id="@+id/BreakFast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="@string/breakfast"
+            android:background="@drawable/meal_back_border"
+            android:textColor="@color/MealSelected"
+             style="?android:attr/buttonBarButtonStyle"
+            />
+        
+        <Button 
+            android:id="@+id/Lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="@string/lunch"
+             style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/meal_back_border"
+            android:textColor="@color/MealSelected"
+            />
+        
+        <Button 
+            android:id="@+id/Dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="@string/dinner"
+             style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/meal_dinner_back"
+            android:textColor="@color/MealSelected"
+            />
+        
+        
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/tabs"
+        android:id="@+id/l_ListviewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        
+        >
+
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearcategoriesbtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/desc_title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/item"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearcategoriesbtn"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/desc1"
+            
+            android:background="@drawable/desc_title"
+            android:gravity="center"
+            android:text="@string/serving_size"
+            android:textStyle="bold" />
+        
+   <RelativeLayout
+       android:id="@+id/linearcategoriesbtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="6dp"
+       
+       android:paddingBottom="6dp"
+       android:paddingLeft="4dp"
+       android:background="@drawable/desc_title"
+       android:layout_alignParentRight="true"
+       android:layout_toRightOf="@+id/desc2" >
+
+        <TextView
+            android:id="@+id/provi"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            
+       		android:layout_marginLeft="4dp"     
+            android:background="#1abc9c"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvprotiendesclabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/provi"
+            android:layout_alignTop="@+id/provi"
+            android:layout_toRightOf="@+id/provi"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/proteing"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+
+        <TextView
+            android:id="@+id/tv20"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            
+            android:layout_alignRight="@+id/vitcreqval"
+            android:layout_toRightOf="@+id/tvprotiendesclabel"
+            android:background="#564f8a"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvfiberdesclabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView9"
+            android:layout_alignTop="@+id/tv20"
+            android:layout_toRightOf="@+id/tv20"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/fatg"
+            android:gravity="center_vertical"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+
+        <TextView
+            android:id="@+id/tvcaloriesdesclabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_toRightOf="@+id/textView7"
+            android:paddingLeft="2dp"
+            android:gravity="center_vertical"
+            android:paddingRight="2dp"
+            android:text="@string/caloriesk"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+
+        <TextView
+            android:id="@+id/tvcarbsdesclabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:paddingLeft="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/carbsg"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/provi"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/tvprotiendesclabel"
+            android:background="#5c6166" />
+        
+        <TextView
+            android:id="@+id/textvita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewvita"
+            android:layout_alignLeft="@+id/tvcarbsdesclabel"
+            android:layout_alignTop="@+id/textViewvita"
+            android:layout_toLeftOf="@+id/vitcreqval"
+            android:paddingLeft="2dp"
+            android:text="@string/vita"
+            android:gravity="center_vertical"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+        
+        <TextView
+            android:id="@+id/textViewvitc"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/textvita"
+            android:background="#f56bbb" />
+        <TextView
+            android:id="@+id/vitcreqval"
+           android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignTop="@+id/tvcarbsdesclabel"
+            android:layout_toRightOf="@+id/tvprotiendesclabel"
+            android:background="#428bca" />
+
+        <TextView
+            android:id="@+id/tvsodiumdesclabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vitcreqval"
+            android:layout_alignLeft="@+id/tvfiberdesclabel"
+            android:layout_alignTop="@+id/vitcreqval"
+            android:paddingLeft="2dp"
+            android:gravity="center_vertical"
+            android:paddingRight="2dp"
+            android:text="@string/sodiummg"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_above="@+id/textView9"
+            android:layout_alignTop="@+id/tv20"
+            android:layout_toRightOf="@+id/tvfiberdesclabel"
+            android:background="#d95c5c"
+            android:textColor="#888888" />
+
+        <TextView
+            android:id="@+id/textViewvita"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBaseline="@+id/textViewvitc"
+            android:layout_alignBottom="@+id/textViewvitc"
+            android:layout_toLeftOf="@+id/tvsodiumdesclabel"
+            android:background="#7ee547" />
+
+        <TextView
+            android:id="@+id/textvitc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewvita"
+            android:layout_alignLeft="@+id/tvsodiumdesclabel"
+            android:layout_alignRight="@+id/tvsodiumdesclabel"
+            android:layout_alignTop="@+id/textViewvita"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:text="@string/vitc"
+            android:textColor="#888888"
+            android:textSize="@dimen/textsize_go" />
+
+    </RelativeLayout>
+
+   </RelativeLayout>
+ 
+    
+    <RelativeLayout
+       android:id="@+id/listviewcontainer"
+        android:layout_below="@+id/l_ListviewDescription"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+         >
+    <ListView
+        
+        android:id="@android:id/list"
+        
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+     >
+    </ListView>
+</RelativeLayout>
+  <!-- creating the gone Delete Layout -->
+   <ImageView 
+       android:id="@+id/ShowDetailsControl"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/view_show"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:background="@color/DARK_GREEN"
+       android:visibility="gone"
+       android:contentDescription="@string/imageload"
+       />
+
+ 
+   
+   <include
+    android:id="@+id/includeTotal"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:background="#ffffff"
+    android:layout_alignTop="@+id/slideMealdesc"
+    
+    layout="@layout/total_desc_grap" />
+
+<include
+    android:id="@+id/includeTotalmeal"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    layout="@layout/meal_day_total"
+    android:layout_alignParentBottom="true"
+    android:layout_alignTop="@+id/slideTotalMealdesc"
+    android:background="#ffffff" />
+ <Button
+       android:id="@+id/slideMealdesc"
+       android:layout_width="43px"
+       android:layout_height="88dp"
+       android:textColor="@color/White"
+       android:layout_marginTop="1dp"
+       android:textSize="12sp"
+       android:layout_above="@+id/slideTotalMealdesc"
+       android:background="@color/LIGHTSKYBLUE"
+       android:text="B\nr\ne\na\nk " />
+   
+   <Button
+       android:id="@+id/slideTotalMealdesc"
+       android:layout_width="43px"
+       android:layout_height="88dp"
+       android:layout_marginTop="2dp"
+       android:layout_marginBottom="1dp"
+       android:textColor="@color/White"
+       android:layout_alignParentBottom="true"
+       android:background="@color/LIGHTSKYBLUE"
+       android:text="T\no\nt\na\nl" 
+       android:textSize="12sp"/>
+</RelativeLayout>

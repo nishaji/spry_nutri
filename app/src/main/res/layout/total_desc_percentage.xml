@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/BLACK_BACK">
+    <TextView 
+    android:id="@+id/Tcalplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     
+    android:textColor="@color/White"
+    android:textSize="@dimen/textsize_13"
+ 	android:gravity="center"
+	android:layout_weight="1"    
+  
+    />
+    
+    <TextView 
+    android:id="@+id/Tcarbplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/White"
+    android:textSize="@dimen/textsize_13"
+  
+ 	android:gravity="center"
+	android:layout_weight="1"    
+  
+     />
+    
+    <TextView 
+    android:id="@+id/Tproplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  
+    android:textColor="@color/White"
+    android:textSize="@dimen/textsize_13"
+ 	android:gravity="center"
+	android:layout_weight="1"    
+  
+    />
+    
+    <TextView 
+    android:id="@+id/Tfibplus"
+android:textSize="@dimen/textsize_13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/White"
+    
+ 	android:gravity="center"
+	android:layout_weight="1"    
+  
+  
+    />
+    
+    
+    <TextView 
+    android:id="@+id/Tsodplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:textSize="@dimen/textsize_13"
+    android:textColor="@color/White"
+  
+ 	android:gravity="center"
+	android:layout_weight="1"    
+  
+    />
+    
+    <TextView 
+    android:id="@+id/Tvitaplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/White"
+    android:textSize="@dimen/textsize_13"
+  
+	android:gravity="center"
+	android:layout_weight="1"    
+	
+    />
+    
+    <TextView 
+    android:id="@+id/Tvitcplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/textsize_13"
+    android:textColor="@color/White"
+  
+	android:gravity="center"
+	android:layout_weight="1"    
+	
+    />
+
+</LinearLayout>

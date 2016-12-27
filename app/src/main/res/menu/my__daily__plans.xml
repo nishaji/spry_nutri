@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.Spry.nutritionix.My_Daily_Plans"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<!--<item
+		android:id="@+id/home"
+		android:orderInCategory="100"
+		android:title="Home"
+		android:showAsAction="never"
+		/>-->
+	<item
+	    android:id="@+id/addnewcategories"
+	    app:showAsAction="always"
+	    android:title="@string/addnew"
+	    android:icon="@drawable/ic_add_circle_outline_white_24dp"
+	    />
+	
+</menu>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/layout_background">
+ 
+  <ListView
+      android:id="@+id/list_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/includeTotal"
+     
+     >
+
+    </ListView>
+
+    
+  <!-- creating the gone Delete Layout -->
+   <ImageView 
+       android:id="@+id/ShowDetailsControl"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/view_show"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:background="@color/DARK_GREEN"
+       android:visibility="gone"
+       android:contentDescription="@string/imageload"
+       />
+
+   <include
+       android:id="@+id/includeTotal"
+       android:layout_width="fill_parent"
+       android:layout_height="90dp"
+       android:layout_alignTop="@+id/slideMealdesc"
+       layout="@layout/total_desc_grap"
+       
+       android:background="#ffffff" />
+
+<include
+    android:id="@+id/includeTotalmeal"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    layout="@layout/meal_day_total"
+    android:layout_alignParentBottom="true"
+    android:layout_alignTop="@+id/slideTotalMealdesc"
+    android:background="#ffffff" />
+ <Button
+       android:id="@+id/slideMealdesc"
+       android:layout_width="43px"
+       android:layout_height="88dp"
+       android:textColor="@color/White"
+       android:layout_marginTop="1dp"
+       android:textSize="12sp"
+       android:layout_above="@+id/slideTotalMealdesc"
+       android:background="@color/LIGHTSKYBLUE"
+       android:text="B\nr\ne\na\nk " />
+   
+   <Button
+       android:id="@+id/slideTotalMealdesc"
+       android:layout_width="43px"
+       android:layout_height="88dp"
+       android:layout_marginTop="2dp"
+       android:layout_marginBottom="1dp"
+       android:textColor="@color/White"
+       android:layout_alignParentBottom="true"
+       android:background="@color/LIGHTSKYBLUE"
+       android:text="T\no\nt\na\nl" 
+       android:textSize="12sp"/>
+</RelativeLayout>

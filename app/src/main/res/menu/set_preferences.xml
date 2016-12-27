@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.Spry.nutritionix.SetPreferences" >
+
+    <item
+        android:id="@+id/main_search"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:showAsAction="never"
+        />
+
+    
+</menu>

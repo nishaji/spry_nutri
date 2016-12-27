@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="textsize_go">10sp</dimen>
+    <dimen name="textsize_go_landscape">14sp</dimen>
+    <dimen name="textsize_8sp">8sp</dimen>
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_11">11sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_7sp">7sp</dimen>
+    <dimen name="textsize_9sp">9sp</dimen>
+    <dimen name="L30px">30px</dimen>
+    <dimen name="L44px">44px</dimen>
+    <dimen name="header_height">90dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp45">49dp</dimen>
+    <dimen name="dp79">79dp</dimen>
+    <dimen name="header_logo_size">24dp</dimen>
+    <dimen name="L195px">195px</dimen>
+    <dimen name="fab_button_diameter">48dp</dimen>
+    <dimen name="fab_button_diameter_landscape">72dp</dimen>
+    <dimen name="text_value_width">30dp</dimen>
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="normal_height">60dp</dimen>
+    <dimen name="my_font_size">16sp</dimen>
+
+    <dimen name="expanded_height">120dp</dimen>
+    <dimen name="default_margin_padding">16dp</dimen>
+
+    <dimen name="inter_card_half_spacing">4dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+
+    <dimen name="quiz_question_text_size">24sp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="drawer_width">240dp</dimen>
+    <dimen name="margin_user_layout">25dp</dimen>
+    <dimen name="margin_user_name">3dp</dimen>
+    <dimen name="margin_user_email">20dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="baseline">16dp</dimen>
+    <dimen name="sliding_panel_padding">150dp</dimen>
+    <dimen name="sliding_panel_height">68dp</dimen>
+</resources>

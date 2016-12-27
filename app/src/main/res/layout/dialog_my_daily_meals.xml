@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Tranparent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/dialog_edt_my_daily_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintsupper"
+        android:textColor="@color/LIGHTSKYBLUE">
+
+        <requestFocus />
+    </EditText>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    >
+    <Button 
+        android:id="@+id/dilaog_btn_cancel_my_dail_meal"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btncancel"
+        android:textColor="@color/LIGHTRED"
+
+        />
+      
+    <Button 
+        android:id="@+id/dialog_btn_ok_my_daily_meal"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOk"
+        android:textColor="@color/LIGHTSKYBLUE"
+
+        />
+    
+</LinearLayout>
+
+</LinearLayout>

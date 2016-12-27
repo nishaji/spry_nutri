@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:clickable="true"
+    android:focusable="false"
+    android:background="@drawable/graph_total_back"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lTmiddle_img_serve"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_total_graph" >
+
+        <TextView
+            android:id="@+id/lTotalserving_size_grams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="7dp"
+            android:textColor="@color/STATUSBARCOLOR"
+            android:textSize="@dimen/textsize_11"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llinearLaygraph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lTmiddle_img_serve" >
+
+        <View
+            android:id="@+id/lviewmarker100"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/lviewx"
+            android:layout_toRightOf="@+id/ltv100"
+            android:background="@color/STATUSBARCOLOR" />
+
+        <View
+            android:id="@+id/lviewx"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/ltv100"
+            android:background="@color/STATUSBARCOLOR" />
+
+        <TextView
+            android:id="@+id/ltv140"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ltv100"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_8sp" />
+
+        <RelativeLayout
+            android:id="@+id/lCAL_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lviewx"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lTcaloriesview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/CALORIES"
+                android:maxHeight="75dp"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lPROT_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_below="@+id/lviewmarker100"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/lCARBS_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lTProtienview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/SODIUM"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lFAT_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/lPROT_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lTFiberview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/PROTIEN"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lsod"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_alignTop="@+id/lFAT_REL"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/lFAT_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lTsodiumview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/FAT"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lvitarel"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_below="@+id/lviewmarker100"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/lsod"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lvita"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/VITAMINA"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lvitcreal"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_alignTop="@+id/lviewmarker100"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/lvitarel"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lvitc"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/VITAMINC"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lCARBS_REL"
+            android:layout_width="30dp"
+            android:layout_height="79dp"
+            android:layout_above="@+id/include1"
+            android:layout_alignTop="@+id/lFAT_REL"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/lCAL_REL"
+            android:background="@drawable/column_graph_back" >
+
+            <TextView
+                android:id="@+id/lTcarbsview"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.4dp"
+                android:background="@color/CARBS"
+                android:maxHeight="@dimen/L195px" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lCAL_REL"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/lvitcreal"
+            layout="@layout/total_desc_percentage" />
+
+        <TextView
+            android:id="@+id/ltv100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/lviewmarker100"
+            android:paddingLeft="4dp"
+            android:text="@string/L100"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_10" />
+
+        <View
+            android:id="@+id/lviewmarker50"
+            android:layout_width="6dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ltv40"
+            android:background="@color/STATUSBARCOLOR" />
+
+        <TextView
+            android:id="@+id/ltv0s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lviewx"
+            android:layout_toLeftOf="@+id/lviewx"
+            android:paddingLeft="4dp"
+            android:text="@string/Zero"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_10" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lPROT_REL"
+            android:layout_alignLeft="@+id/lCAL_REL"
+            android:layout_alignRight="@+id/lvitcreal"
+            layout="@layout/total_desc_value" />
+
+        <TextView
+            android:id="@+id/ltv40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ltv100"
+            android:layout_centerVertical="true"
+            android:paddingLeft="4dp"
+            android:text="@string/LS50"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/textsize_10" />
+    </RelativeLayout>
+
+</RelativeLayout>

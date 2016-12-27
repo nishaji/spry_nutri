@@ -1,0 +1,299 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.Spry.nutritionix.Thanku" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/dgoal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/LIGHTRED" />
+
+    <TextView
+        android:id="@+id/calorierequiredval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calorierequired"
+        android:layout_alignBottom="@+id/calorierequired"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V2000" 
+         />
+
+    <TextView
+        android:id="@+id/calorierequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="@string/Calories" />
+
+    <TextView
+        android:id="@+id/Proteinsrequi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calorierequired"
+        android:layout_below="@+id/calorierequired"
+        android:layout_marginTop="8dp"
+        android:text="@string/Protein" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Proteinsrequi"
+        android:layout_below="@+id/Proteinsrequi"
+        android:layout_marginTop="8dp"
+        android:text="@string/Sodium" />
+
+    <TextView
+        android:id="@+id/carbsrequi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="8dp"
+        android:text="@string/Carbs" />
+
+    <TextView
+        android:id="@+id/fatrequ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carbsrequi"
+        android:layout_below="@+id/carbsrequi"
+        android:layout_marginTop="8dp"
+        android:text="@string/fat" />
+
+    <TextView
+        android:id="@+id/ironrequ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fatrequ"
+        android:layout_below="@+id/fatrequ"
+        android:layout_marginTop="8dp"
+        android:text="@string/Iron" />
+
+    <TextView
+        android:id="@+id/calrequ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ironrequ"
+        android:layout_below="@+id/ironrequ"
+        android:layout_marginTop="8dp"
+        android:text="@string/Calcium" />
+
+    <TextView
+        android:id="@+id/vitarequv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calrequ"
+        android:layout_below="@+id/calrequ"
+        android:layout_marginTop="8dp"
+        android:text="@string/vita" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vitarequv"
+        android:layout_below="@+id/vitarequv"
+        android:layout_marginTop="8dp"
+        android:text="@string/vitc" />
+
+      <TextView
+        android:id="@+id/tvdesclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/vitareqval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V50"
+         />
+
+    <TextView
+        android:id="@+id/calreqval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vitarequv"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V50" 
+         />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/proteinsreqval"
+        android:layout_alignBottom="@+id/proteinsreqval"
+        android:layout_toRightOf="@+id/proteinsreqval"
+        android:text="@string/g" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/carbsrequval"
+        android:layout_alignBottom="@+id/carbsrequval"
+        android:layout_toRightOf="@+id/carbsrequval"
+        android:text="@string/g" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fatrequval"
+        android:layout_alignBottom="@+id/fatrequval"
+        android:layout_toRightOf="@+id/fatrequval"
+        android:text="@string/g" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vitareqval"
+        android:layout_alignBottom="@+id/vitareqval"
+        android:layout_toRightOf="@+id/vitareqval"
+        android:text="@string/mg" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ironrequval"
+        android:layout_alignBottom="@+id/ironrequval"
+        android:layout_toRightOf="@+id/ironrequval"
+        android:text="@string/mg" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calreqval"
+        android:layout_alignBottom="@+id/calreqval"
+        android:layout_toRightOf="@+id/calreqval"
+        android:text="@string/mg" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vitcreqval"
+        android:layout_alignBottom="@+id/vitcreqval"
+        android:layout_toRightOf="@+id/vitcreqval"
+        android:text="@string/mg" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sodreqval"
+        android:layout_alignBottom="@+id/sodreqval"
+        android:layout_toRightOf="@+id/sodreqval"
+        android:text="@string/mg" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calorierequiredval"
+        android:layout_alignBottom="@+id/calorierequiredval"
+        android:layout_toRightOf="@+id/calorierequiredval"
+        android:text="@string/k" />
+
+    <TextView
+        android:id="@+id/vitcreqval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V60" />
+
+    <TextView
+        android:id="@+id/ironrequval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calrequ"
+        android:text="@string/V24" 
+        android:layout_toRightOf="@+id/textView1"
+         />
+
+    <TextView
+        android:id="@+id/fatrequval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fatrequ"
+        android:layout_alignBottom="@+id/fatrequ"
+        android:layout_toRightOf="@+id/textView1"
+         android:text="@string/V65" />
+
+    <TextView
+        android:id="@+id/carbsrequval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fatrequ"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V300"
+         />
+
+    <TextView
+        android:id="@+id/sodreqval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/carbsrequi"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V2400" 
+         />
+
+    <TextView
+        android:id="@+id/proteinsreqval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/V50" 
+         />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnfinalsetpreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:text="@string/set"
+        android:textColor="@color/MealSelected" />
+
+</RelativeLayout>

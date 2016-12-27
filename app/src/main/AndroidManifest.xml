@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapplication">
+
+    <uses-sdk
+         android:minSdkVersion="@integer/minsdk"
+         android:maxSdkVersion="23"/>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.Spry.nutritionix.MyAppClass"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@drawable/nutritionix_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.spry.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spry.nutrition.sign.Gsign"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.Spry.nutritionix.Go"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_go"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity
+            android:name="com.Spry.nutritionix.ChartActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_chart"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.Spry.nutritionix.SetPreferences"
+            android:label="@string/title_activity_set_preferences" />
+        <activity
+            android:name="com.Spry.nutritionix.Thanku"
+            android:label="@string/title_activity_thanku" />
+        <!--
+            <activity
+            android:name="com.Spry.dev5magic.NoBoringActionBarActivity"
+            android:label="@string/title_activity_save__show"
+            android:theme="@style/AppTheme" />
+        -->
+        <service android:name="com.spry.SyncData.SyncData" />
+
+        <receiver android:name="com.spry.SyncData.Reciever" />
+
+        <activity
+            android:name="com.Spry.nutritionix.LauncherActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_launcher"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.Spry.nutritionix.FirstLaunchingTutorial"
+            android:label="@string/title_activity_first_launching_tutorial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+            <activity
+            android:name="com.Spry.nutritionix.Daily_Goal"
+            android:label="@string/title_activity_daily__goal" />
+        -->
+    </application>
+
+</manifest>

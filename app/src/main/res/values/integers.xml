@@ -1,0 +1,7 @@
+<resources>
+    <integer name="card_flip_time_full">300</integer>
+    <integer name="card_flip_time_half">150</integer>
+    <dimen name="item_height">67dp</dimen>
+    <integer name="minsdk">16</integer>
+    <integer name="maxsdk">23</integer>
+</resources>

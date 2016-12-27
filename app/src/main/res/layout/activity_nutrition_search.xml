@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen_back"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.Spry.nutritionix.NutritionSearch" >
+    <RelativeLayout
+        android:id="@+id/mainrelative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerVertical="true"
+        >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mainrelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edtsearchback" >
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/imagesearch"
+            android:background="@drawable/editborder"
+            android:ems="10"
+            android:hint="@string/edtsearch"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imagecutlaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edtSearch"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:contentDescription="@string/imageload"
+            android:onClick="clearText"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imagesearch"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/imageload"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtSearch"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/mainrelative"
+        android:layout_alignTop="@+id/mainrelative"
+        android:layout_toRightOf="@+id/mainrelative"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/btnround" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/mainrelative"
+        android:layout_alignTop="@+id/mainrelative"
+        android:layout_toRightOf="@+id/mainrelative"
+        android:background="@drawable/btnround"
+        android:text="@string/go"
+        android:layout_marginRight="18dp"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/home_logo"
+        android:src="@drawable/nutritionix_logo" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imagelogo"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/serving_size_grams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp"
+            android:gravity="center_horizontal"
+            android:textStyle="normal"
+            android:text="@string/Company_name"
+            android:textColor="#9bc535"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/serving_size23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:gravity="center_horizontal"
+            android:text="@string/nutrition"
+            android:textColor="#f57218"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:contentDescription="@string/imageload"
+        android:layout_above="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/imagelogo"
+        android:layout_toStartOf="@+id/imagelogo"
+        android:layout_marginBottom="52dp" />
+</RelativeLayout>
